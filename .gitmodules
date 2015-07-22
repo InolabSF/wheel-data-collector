@@ -1,0 +1,3 @@
+[submodule "wheel data collector/SwiftyJSON"]
+	path = wheel data collector/SwiftyJSON
+	url = https://github.com/SwiftyJSON/SwiftyJSON.git
