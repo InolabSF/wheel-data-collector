@@ -114,7 +114,7 @@ extension ViewController: UIAlertViewDelegate {
 /// MARK: - CLLocationManagerDelegate
 extension ViewController: CLLocationManagerDelegate {
 
-    func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
+    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
         dispatch_async(dispatch_get_main_queue(), { [unowned self] () in
             self.label.text = "coordinate: \(newLocation.coordinate.latitude), \(newLocation.coordinate.longitude)"
             self.locationList.appendLocation(newLocation)
@@ -122,7 +122,7 @@ extension ViewController: CLLocationManagerDelegate {
         })
     }
 
-    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
     }
 
 }

@@ -13,7 +13,6 @@
 		E65741411B5EEADE0017A7FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E657413F1B5EEADE0017A7FB /* Main.storyboard */; };
 		E65741431B5EEADE0017A7FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65741421B5EEADE0017A7FB /* Images.xcassets */; };
 		E65741461B5EEADE0017A7FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E65741441B5EEADE0017A7FB /* LaunchScreen.xib */; };
-		E65741521B5EEADE0017A7FB /* wheel_data_collectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65741511B5EEADE0017A7FB /* wheel_data_collectorTests.swift */; };
 		E68ADEEF1B5EEF450059E580 /* WDCConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68ADEEE1B5EEF450059E580 /* WDCConstant.swift */; };
 		E68ADEF41B5EF6240059E580 /* WDCLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68ADEF31B5EF6240059E580 /* WDCLocation.swift */; };
 		E68ADEF61B5EF6760059E580 /* WDCLocationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68ADEF51B5EF6760059E580 /* WDCLocationList.swift */; };
@@ -21,16 +20,6 @@
 		E68ADEFD1B5F187D0059E580 /* WDCWheelClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68ADEFB1B5F187D0059E580 /* WDCWheelClient.swift */; };
 		E68ADEFE1B5F187D0059E580 /* WDCWheelOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68ADEFC1B5F187D0059E580 /* WDCWheelOperationQueue.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E657414C1B5EEADE0017A7FB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E657412E1B5EEADE0017A7FB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E65741351B5EEADE0017A7FB;
-			remoteInfo = "wheel data collector";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		34940D8390653550DD149D75 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,7 +32,6 @@
 		E65741401B5EEADE0017A7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E65741421B5EEADE0017A7FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E65741451B5EEADE0017A7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E657414B1B5EEADE0017A7FB /* wheel data collectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wheel data collectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65741501B5EEADE0017A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E65741511B5EEADE0017A7FB /* wheel_data_collectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheel_data_collectorTests.swift; sourceTree = "<group>"; };
 		E68ADEEE1B5EEF450059E580 /* WDCConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDCConstant.swift; sourceTree = "<group>"; };
@@ -62,13 +50,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				074B912B9775B0F67EC8258C /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E65741481B5EEADE0017A7FB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				E65741361B5EEADE0017A7FB /* wheel data collector.app */,
-				E657414B1B5EEADE0017A7FB /* wheel data collectorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,44 +168,24 @@
 			productReference = E65741361B5EEADE0017A7FB /* wheel data collector.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E657414A1B5EEADE0017A7FB /* wheel data collectorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E65741581B5EEADE0017A7FB /* Build configuration list for PBXNativeTarget "wheel data collectorTests" */;
-			buildPhases = (
-				E65741471B5EEADE0017A7FB /* Sources */,
-				E65741481B5EEADE0017A7FB /* Frameworks */,
-				E65741491B5EEADE0017A7FB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E657414D1B5EEADE0017A7FB /* PBXTargetDependency */,
-			);
-			name = "wheel data collectorTests";
-			productName = "wheel data collectorTests";
-			productReference = E657414B1B5EEADE0017A7FB /* wheel data collectorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E657412E1B5EEADE0017A7FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "iSi-Dentsu";
 				TargetAttributes = {
 					E65741351B5EEADE0017A7FB = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = RZSN6RVCLX;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
 						};
-					};
-					E657414A1B5EEADE0017A7FB = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = E65741351B5EEADE0017A7FB;
 					};
 				};
 			};
@@ -243,7 +203,6 @@
 			projectRoot = "";
 			targets = (
 				E65741351B5EEADE0017A7FB /* wheel data collector */,
-				E657414A1B5EEADE0017A7FB /* wheel data collectorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,13 +215,6 @@
 				E65741411B5EEADE0017A7FB /* Main.storyboard in Resources */,
 				E65741461B5EEADE0017A7FB /* LaunchScreen.xib in Resources */,
 				E65741431B5EEADE0017A7FB /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E65741491B5EEADE0017A7FB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,23 +269,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E65741471B5EEADE0017A7FB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E65741521B5EEADE0017A7FB /* wheel_data_collectorTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E657414D1B5EEADE0017A7FB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E65741351B5EEADE0017A7FB /* wheel data collector */;
-			targetProxy = E657414C1B5EEADE0017A7FB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E657413F1B5EEADE0017A7FB /* Main.storyboard */ = {
@@ -442,6 +378,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "wheel data collector/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG -D LOCAL_SERVER";
@@ -457,44 +395,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "wheel data collector/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "wheel data collector/wheel data collector-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		E65741591B5EEADE0017A7FB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "wheel data collectorTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wheel data collector.app/wheel data collector";
-			};
-			name = Debug;
-		};
-		E657415A1B5EEADE0017A7FB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "wheel data collectorTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wheel data collector.app/wheel data collector";
 			};
 			name = Release;
 		};
@@ -515,15 +421,6 @@
 			buildConfigurations = (
 				E65741561B5EEADE0017A7FB /* Debug */,
 				E65741571B5EEADE0017A7FB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E65741581B5EEADE0017A7FB /* Build configuration list for PBXNativeTarget "wheel data collectorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E65741591B5EEADE0017A7FB /* Debug */,
-				E657415A1B5EEADE0017A7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5FD043CA-F491-4A8D-B439-7EED58E15B59</string>
+	<key>IDESourceControlProjectName</key>
+	<string>wheel data collector</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C537F1A2C23127103F43FBE68BB13D7D9497D48F</key>
+		<string>https://github.com/InolabSF/wheel-data-collector.git</string>
+		<key>C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3</key>
+		<string>https://github.com/SwiftyJSON/SwiftyJSON.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>wheel data collector.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C537F1A2C23127103F43FBE68BB13D7D9497D48F</key>
+		<string>..</string>
+		<key>C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3</key>
+		<string>..wheel%20data%20collector/SwiftyJSON</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/InolabSF/wheel-data-collector.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C537F1A2C23127103F43FBE68BB13D7D9497D48F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SwiftyJSON</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C537F1A2C23127103F43FBE68BB13D7D9497D48F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wheel%20data%20collector</string>
+		</dict>
+	</array>
+</dict>
+</plist>

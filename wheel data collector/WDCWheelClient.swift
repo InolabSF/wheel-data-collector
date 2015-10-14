@@ -18,15 +18,20 @@ class WDCWheelClient: AnyObject {
      * @param json Dictionary
      * @param completionHandler (json: JSON?) -> Void
      */
-    func postWheelData(#json: [[String: String]], completionHandler: (json: JSON?) -> Void) {
+    func postWheelData(json json: [[String: String]], completionHandler: (json: JSON?) -> Void) {
         let request = NSMutableURLRequest(URL: NSURL(string: WDCWheel.API.Stub)!)
         request.HTTPMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json", forHTTPHeaderField: "Accept")
-        request.HTTPBody = NSJSONSerialization.dataWithJSONObject(["wheel_datas" : json], options: nil, error: nil)
+        do {
+            request.HTTPBody = try NSJSONSerialization.dataWithJSONObject(["wheel_datas" : json], options: NSJSONWritingOptions(rawValue: 0))
+        }
+        catch _ {
+            completionHandler(json: nil)
+        }
 
         // request
-        var operation = ISHTTPOperation(
+        let operation = ISHTTPOperation(
             request: request,
             handler:{ (response: NSHTTPURLResponse!, object: AnyObject!, error: NSError!) -> Void in
                 var responseJSON: JSON = nil

@@ -56,11 +56,20 @@ class WDCLocationList: NSObject {
             wheelDatas[i]["value"] = "\(velocityDifference / second)"
 
             wheelDatas[i-1].removeValueForKey("velocity")
+
         }
         if wheelDatas.count > 0 { wheelDatas.removeAtIndex(0) }
         if wheelDatas.count > 0 { wheelDatas[wheelDatas.count-1].removeValueForKey("velocity") }
 
-        return wheelDatas
+        var json: [[String: String]] = []
+        for var i = 0; i < wheelDatas.count; i++ {
+            let value = (wheelDatas[i]["value"] as NSString?)!.doubleValue
+            if value > -50.0 && value < 0.0 {
+                json.append(wheelDatas[i])
+            }
+        }
+
+        return json
     }
 
 }
